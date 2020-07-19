@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    background: rgba(0, 0, 0, 0.1) url('images/sunny2.jpg');
+    
+    background-blend-mode: darken;
+    background-size: cover;
+    height: 100vh;
+    /* background-position: top center;
+    overflow: hidden;
+    background-repeat: no-repeat; */
+}
+
+
+
+.form{
+    max-width: 40%;
+    text-align: center;
+    
+    margin: 110px auto;
+    background: rgba(240, 248, 255, 0.3);
+    padding: 0px 23px;
+    border: 2px solid #221f1f94;
+    border-radius: 10px;
+}
+.cityname{
+    display: flex;
+    flex-direction: column;
+
+}
+.cityname input{
+    margin: 8px 0;
+    padding: 5px;
+    border: 2px solid #13111194;
+    border-radius: 10px;
+    margin-top: 22px;
+    background: #f8f9f8cc;
+   
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(99, 22, 22);
+}
+.cityname input:focus{
+    background-color: white;
+    
+}
+
+.weatherbody{
+    display: none;
+    margin: 8px 0;
+    padding: 5px;
+    border: 2px solid #13111194;
+    border-radius: 10px;
+    
+    background: #f8f9f8cc;
+    
+    
+    line-height: 36px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(99, 22, 22);
+}
+
+.temp{
+    font-size: 60px;
+    padding: 34px;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width:868px){
+  
+    .form{
+        max-width: 76%;
+    }
+
+}
