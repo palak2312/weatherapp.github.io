@@ -105,5 +105,3 @@ function dateManage(todaydate){
 
     return `${date} ${month} (${day}), ${year}`; 
 }
-
-
