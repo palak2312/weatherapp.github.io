@@ -16,7 +16,7 @@ cityname.addEventListener('keypress', (event) => {
     {
         console.log(cityname.value);
         getWheatherReport(cityname.value);
-        document.querySelector('.weatherbody').style.display="block";
+        
     }
 
 });
@@ -27,8 +27,10 @@ function getWheatherReport(city){
           return weather.json();
 
      }).then(showWeatherReport)
-     .catch(error => alert(error.message));
-
+     .catch(error => {
+         alert(error.message);
+         document.querySelector('.weatherbody').style.display="none";
+     });
 }
 
 function showWeatherReport(weather){
@@ -89,7 +91,7 @@ function showWeatherReport(weather){
         document.body.style.backgroundImage="url('images/mist.jpg')";
     }
     
-
+    document.querySelector('.weatherbody').style.display="block";
 
 }
 
