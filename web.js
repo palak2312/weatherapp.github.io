@@ -53,31 +53,37 @@ function showWeatherReport(weather){
     {
         document.body.style.backgroundImage="url('images/clear.jpg')";
     }
+    else
     if(weathertype.textContent=="Clouds")
     {
         document.body.style.backgroundImage="url('images/clouds.jpg')";
     }
+    else
     if(weathertype.textContent=="Rain")
     {
         document.body.style.backgroundImage="url('images/rains.jpg')";
     }
+    else
     if(weathertype.textContent=="Snow")
     {
         document.body.style.backgroundImage="url('images/snow.jpg')";
     }
+    else
     if(weathertype.textContent=="Sunny")
     {
         document.body.style.backgroundImage="url('images/sunny2.jpg')";
     }
+    else
     if(weathertype.textContent=="Thunderstorm")
     {
         document.body.style.backgroundImage="url('images/thunderstorm.jpg')";
     }
+    else
     if(weathertype.textContent=="Haze")
     {
         document.body.style.backgroundImage="url('images/haze.jpg')";
     }
-    if(weathertype.textContent=="Mist")
+    else
     {
         document.body.style.backgroundImage="url('images/mist.jpg')";
     }
