@@ -26,7 +26,8 @@ function getWheatherReport(city){
      .then(weather => {
           return weather.json();
 
-     }).then(showWeatherReport);
+     }).then(showWeatherReport)
+     .catch(error => alert(error.message));
 
 }
 
